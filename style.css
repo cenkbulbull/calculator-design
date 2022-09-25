@@ -1,0 +1,83 @@
+/*
+font-family: 'Work Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:#DDE3E6 ;
+}
+
+.calculator{
+    background-color:#738B9B ;
+    width: 250px;
+    height: 450px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 80px auto;
+    box-shadow: 15px 15px 15px #738B9B;
+}
+.calculator .result{
+    color: #ffffff;
+    position: relative;
+    width: 250px;
+    height: 100px;
+    margin-top: 25px;
+}
+.calculator .result p:first-child{
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+}
+.calculator .result p:last-child{
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.calculator .operation {
+    width: 250px;
+    height: 300px ;
+    font-size: 13px;
+}
+.calculator .operation td{
+    background-color: #ffffff;
+    color: #596168;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.calculator .operation td:hover{
+    background-color: #DDE3E6;
+    transition: .5s;
+}
+.calculator .operation tr:nth-child(1) td{
+    background-color: #DDE3E6;
+    font-size: 16px;
+}
+.calculator .operation tr td:last-child{
+    background-color: #DDE3E6;
+    font-size: 16px;
+    
+}
+.calculator .operation tr:last-child td:last-child{
+    background-color: #FC6464;
+    color: #ffffff;
+    font-size: 20px;
+}
